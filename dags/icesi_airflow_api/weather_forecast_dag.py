@@ -10,7 +10,7 @@ from dags.icesi_airflow_api.utils.weather_api import run_weather_forecast_pipeli
 URL = 'https://smn.conagua.gob.mx/tools/GUI/webservices/index.php?method=3'
 SNOWFLAKE_CONN_ID = 'snowflake_conn_id'  # ID de conexión configurado en Airflow
 DATABASE = 'DEV_ICESI'  # Nombre de la base de datos en Snowflake
-SCHEMA = 'SYSTEM_RECOMMENDATION'          # Nombre del esquema en Snowflake
+SCHEMA = 'SYSTEM_RECOMMENDATION'         # Nombre del esquema en Snowflake
 TABLE = 'CONAGUA_WEATHER_RAW'              # Nombre de la tabla de destino en Snowflake
 QUERIES_BASE_PATH = os.path.join(os.path.dirname(__file__), 'queries')
 
