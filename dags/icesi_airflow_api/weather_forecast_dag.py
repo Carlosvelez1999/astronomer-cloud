@@ -3,7 +3,7 @@ from datetime import datetime
 from airflow import DAG
 from airflow.decorators import dag, task
 from airflow.utils.dates import days_ago
-from airflow.providers.snowflake.operators.snowflake import SnowflakeOperator
+from airflow.providers.snowflake.operators.snowflake_operator import SnowflakeOperator
 from dags.icesi_airflow_api.utils.weather_api import run_weather_forecast_pipeline
 
 # Definimos las configuraciones básicas para la ejecución
