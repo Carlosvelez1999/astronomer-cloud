@@ -1,1 +1,2 @@
-astro-sdk-python[amazon,databricks,duckdb,google,postgres,snowflake] 
+astro-sdk-python[amazon,databricks,duckdb,google,postgres,snowflake]
+apache-airflow-providers-snowflake
