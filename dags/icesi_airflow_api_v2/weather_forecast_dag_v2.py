@@ -22,7 +22,7 @@ from dags.icesi_airflow_api.utils.weather_api import run_weather_forecast_pipeli
 from airflow.providers.snowflake.hooks.snowflake import SnowflakeHook
 
 # Configuraciones básicas para la ejecución
-URL = 'https://smn.conagua.gob.mx/tools/GUI/webservices/index.php?method=3'
+URL = 'https://www.dian.gov.co/dian/cifras/Basesestadisticasimportaciones/12_Importaciones_2024_Diciembre.zip'
 SNOWFLAKE_CONN_ID = 'snowflake_conn_id'  # ID de conexión configurado en Airflow
 DATABASE = 'DEV_ICESI'                   # Nombre de la base de datos en Snowflake
 SCHEMA = 'SYSTEM_RECOMMENDATION'         # Nombre del esquema en Snowflake
