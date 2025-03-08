@@ -38,7 +38,7 @@ QUERIES_BASE_PATH = os.path.join(os.path.dirname(__file__), 'queries')
     tags=['weather', 'snowflake'],
     template_searchpath=QUERIES_BASE_PATH
 )
-def weather_forecast_dag():
+def weather_forecast_dag_v2():
     """
     DAG para obtener datos meteorológicos y ejecutar una consulta en Snowflake.
 
@@ -95,4 +95,4 @@ def weather_forecast_dag():
 
 
 # Instanciar el DAG.
-dag = weather_forecast_dag()
+dag = weather_forecast_dag_v2()
