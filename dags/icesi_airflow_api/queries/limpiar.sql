@@ -44,3 +44,17 @@ SELECT DISTINCT
     TRY_TO_NUMBER(TEMP, 0.0) AS TEMP,
     TRY_TO_NUMBER(VELVIEN, 0.0) AS VELVIEN
 FROM DEV_ICESI.SYSTEM_RECOMMENDATION.CONAGUA_WEATHER_RAW;
+
+
+create or replace table DEV_ICESI.SYSTEM_RECOMMENDATION.feature_ml  as 
+select 
+*,
+case
+    when desciel = 'Cielo nublado' then 1
+    when desciel = 'Despejado' then -1
+    else
+    0
+
+end as status
+
+from DEV_ICESI.SYSTEM_RECOMMENDATION.transformed_weather_data;
