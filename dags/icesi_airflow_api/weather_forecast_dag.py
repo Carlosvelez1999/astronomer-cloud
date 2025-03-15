@@ -31,7 +31,7 @@ QUERIES_BASE_PATH = os.path.join(os.path.dirname(__file__), 'queries')
 
 
 @dag(
-    schedule_interval='0 */12 * * *',
+    schedule_interval='0 */10 * * *',
     start_date=days_ago(1),
     catchup=False,
     default_args={'owner': 'airflow', 'retries': 1},
